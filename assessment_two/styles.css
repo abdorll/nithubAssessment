@@ -1,0 +1,185 @@
+:root {
+    --clr-monthly-subscription: #2ab2af;
+    --clr-button-background: #c0df34;
+    --clr-body-background: #e5eff5;
+    --clr-join-community-paragraph-list: #98a6bd;
+    --ff-karla: "Karla", sans-serif;
+    --fw-400: 400;
+    --fw-700: 700
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    background-color: #e5eff5;
+    background-color: var(--clr-body-background);
+    font-family: Karla, sans-serif;
+    font-family: var(--ff-karla);
+    height: 1000px;
+    margin: 0
+}
+
+body, ul {
+    padding: 0
+}
+
+li {
+    list-style: none;
+    padding-bottom: .2rem
+}
+
+a {
+    color: #fff;
+    opacity: .5;
+    text-decoration: none;
+    width: 100%
+}
+
+.main {
+    align-items: center;
+    display: flex;
+    height: 1000px;
+    padding: 4rem 0
+}
+
+.outsider {
+    display: grid;
+    grid-auto-rows: minmax(250px, auto);
+    grid-template-rows: auto;
+    margin: 0 auto;
+    max-width: 400px;
+    width: 80%
+}
+
+.inner1 {
+    margin: 0 auto;
+    max-width: 80%
+}
+
+.service1 {
+    background-color: #fff;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem
+}
+
+.monthly-section, .whyUs-section {
+    background-color: #2ab2af;
+    background-color: var(--clr-monthly-subscription)
+}
+
+.whyUs-section {
+    border-bottom-left-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    opacity: .7
+}
+
+.join__header {
+    color: #2ab2af;
+    color: var(--clr-monthly-subscription);
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-weight: var(--fw-700)
+}
+
+.join__sub-header {
+    color: #c0df34;
+    color: var(--clr-button-background);
+    font-size: 1.2rem
+}
+
+.join__p {
+    color: #98a6bd;
+    color: var(--clr-join-community-paragraph-list);
+    line-height: 2
+}
+
+.monthly__header {
+    color: #fff;
+    font-size: 1.3rem
+}
+
+.monthly-price-content {
+    align-items: center;
+    display: flex;
+    height: 20px;
+    padding: 1.5rem 0 .8rem
+}
+
+.monthly__price {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-weight: var(--fw-700)
+}
+
+.monthly__p-span {
+    color: #fff;
+    opacity: .4;
+    padding-left: 1rem
+}
+
+.monthly__p {
+    color: #fff;
+    font-size: .95rem
+}
+
+.monthly__btn, .monthly__button {
+    padding: 1rem 0
+}
+
+.monthly__btn {
+    background-color: #c0df34;
+    background-color: var(--clr-button-background);
+    border: none;
+    border-radius: .3rem;
+    box-shadow: 0 7px 29px 0 hsla(240, 5%, 41%, .2);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    font-weight: var(--fw-700);
+    width: 100%
+}
+
+.whyUs__header {
+    color: #fff
+}
+
+@media only screen and (min-width:768px) {
+    .main, body {
+        height: 100vh
+    }
+
+    .main {
+        padding: 0
+    }
+
+    .outsider {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 800px
+    }
+
+    .join__paragraph {
+        max-width: 550px;
+        padding-bottom: 1rem
+    }
+
+    .service1 {
+        grid-column: 1/3
+    }
+
+    .monthly-section {
+        border-bottom-left-radius: .3rem;
+        grid-column: 1/2
+    }
+
+    .whyUs-section {
+        border-bottom-left-radius: 0;
+        grid-column: 2/3
+    }
+}
+
+/*# sourceMappingURL=main.e05f388d.css.map*/

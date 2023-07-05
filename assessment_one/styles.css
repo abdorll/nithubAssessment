@@ -1,0 +1,43 @@
+.card {
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body {
+    background-color: #14243C;
+    /* width: 100%; */
+    position: relative;
+}
+
+
+.card-body .card-title {
+    color: #fff;
+    font-size: 30px;
+}
+
+.card-text {
+    font-size: 20px;
+    color: #5D789D;
+}
+.card-text1 {
+    color: #00FFEB;
+    font-size: 25px;
+}
+
+.card-text2 {
+    color: #5D789D;
+    font-size: 19px;
+}
+
+.img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+@media screen and (min-width:768px) {
+    .card-body {
+        width: 350px;
+    }
+}
